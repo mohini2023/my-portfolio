@@ -1,61 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Meta -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Mohini Mishra | Web Developer & SEO Specialist Portfolio</title>
 
   <meta name="description"
-    content="Mohini Mishra is a web developer with SEO expertise, skilled in HTML, CSS, JavaScript, React, and on-page SEO. View projects and experience">
+    content="Mohini Mishra is a web developer with SEO expertise, skilled in HTML, CSS, JavaScript, React, and on-page SEO.">
   <meta name="keywords"
-    content="Mohini Mishra, Web Developer, Frontend Developer, SEO Specialist, HTML CSS JavaScript, React, SEO Portfolio, Digital Marketing">
-
-  <!-- Google Search Console -->
-  <meta name="google-site-verification"
-    content="Ukntk5WwJCM2bc7waZm1d8asPJpTb0m6RsBQLSesdn0" />
-
-  <!-- Sitemap -->
-  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    content="Mohini Mishra, Web Developer, Frontend Developer, SEO Specialist, HTML CSS JavaScript, React, SEO Portfolio">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/webp" href="assets/img/logo1.webp">
+  <link rel="icon" type="image/png" href="assets/img/logo1.webp">
 
-  <!-- Preconnect Fonts -->
+  <!-- Google Fonts (NON-BLOCKING) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <!-- ✅ Main CSS (CRITICAL – preload properly) -->
+  <!-- Main CSS (NON-BLOCKING) -->
   <link rel="preload" href="assets/css/style.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="assets/css/style.css">
   </noscript>
 
-  <!-- ✅ Vendor CSS (NON-BLOCKING) -->
-  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css"
-    media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-    media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css"
-    media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/vendor/aos/aos.css"
-    media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css"
-    media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css"
-    media="print" onload="this.media='all'">
+  <!-- Vendor CSS (NON-BLOCKING) -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css" media="print"
+    onload="this.media='all'">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" media="print"
+    onload="this.media='all'">
 
-  <!-- ✅ Font Awesome (NON-BLOCKING) -->
+  <!-- Font Awesome (NON-BLOCKING) -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     media="print" onload="this.media='all'">
 
+  <meta name="google-site-verification"
+    content="Ukntk5WwJCM2bc7waZm1d8asPJpTb0m6RsBQLSesdn0">
 </head>
 
 <body>
@@ -110,7 +103,7 @@
 
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="my-iamge.webp" class="img-fluid" alt="my image">
+                        <img src="my-iamge.webp"  alt="my image" width="600" height="400" class="img-fluid"loading="lazy">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content">
                         <h4 class="about-heading">Web Developer & SEO</h4>
@@ -389,199 +382,200 @@
                 </div>
         </section><!-- End Resume Section -->
 
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio section-bg">
-            <div class="container" data-aos="fade-up">
+        <!-- ======= Project Section ======= -->
+        
+<section id="portfolio" class="portfolio section-bg">
+  <div class="container" data-aos="fade-up">
 
-                <div class="section-title">
-                    <h2>Projects</h2>
-                    <b>This is a portfolio of my work, including both personal and production projects.</b>
-                </div>
+    <div class="section-title">
+      <h2>Projects</h2>
+      <p class="text-align-center"><b>From idea to execution — a showcase of web and SEO projects crafted for performance, visibility, and great user experience</b></p>
+    </div>
 
-                <div class="row" data-aos="fade-up">
-                    <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">Apps</li>
-                            <li data-filter=".filter-web">Websites</li>
-                            <li data-filter=".filter-seo">SEO</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- FILTERS -->
+    <div class="row mb-4">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-web">Websites</li>
+          <li data-filter=".filter-app">Apps</li>
+          <li data-filter=".filter-seo">SEO</li>
+        </ul>
+      </div>
+    </div>
 
-                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+    <div class="row portfolio-container">
 
+      <!-- FOOD RECIPE -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="assets/img/food-recip-image.webp" alt="Food Recipe Website"
+            width="400" height="225" loading="lazy" class="img-fluid">
+          <div class="portfolio-links">
+            <a href="https://food-application-lilac.vercel.app/" target="_blank"><i class="bx bx-link"></i></a>
+            <a href="https://github.com/mohini2023/food-application" target="_blank"><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="portfolio-title">
+            <h5>Food Recipe Website</h5>
+            <div class="tech-icons">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="food-recip-image.webp" class="img-fluid" alt="Book-IT ecommerce Store">
-                            <div class="portfolio-links">
-                                <a href="https://food-application-lilac.vercel.app/" title="View App" target="_blank"><i
-                                        class="bx bx-link"></i></a>
-                                <a href="https://github.com/mohini2023/food-application" title="View github"
-                                    target="_blank"><i class="bx bxl-github"></i></a>
-                            </div>
-                            <br>
-                            <div class="portfolio-title">
-                                <h5>Food Recipe website</h5>
-                                <i class="fa-brands fa-react"  style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-html5  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-css3-alt  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-js  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-stripe  fa-lg" style="color: #0563BB;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="ai-chat.webp" class="img-fluid" alt="chatbot">
-                            <div class="portfolio-links">
-                                <a href="https://mohini2023.github.io/AI-Chatbot/" title="View App" target="_blank"><i
-                                        class="bx bx-link"></i></a>
-                                <a href="https://github.com/mohini2023/AI-Chatbot" title="View github"
-                                    target="_blank"><i class="bx bxl-github"></i></a>
-                            </div>
-                            <br>
-                            <div class="portfolio-title">
-                                <h5>AI-Chatbot</h5>
-                                <i class="fa-brands fa-react"  style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-html5  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-css3-alt  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-js  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-stripe  fa-lg" style="color: #0563BB;"></i>
-                            </div>
-                        </div>
-                    </div>
+      <!-- AI CHATBOT -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="assets/img/ai-chat.webp" alt="AI Chatbot"
+            width="400" height="225" loading="lazy" class="img-fluid">
+          <div class="portfolio-links">
+            <a href="https://mohini2023.github.io/AI-Chatbot/" target="_blank"><i class="bx bx-link"></i></a>
+            <a href="https://github.com/mohini2023/AI-Chatbot" target="_blank"><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="portfolio-title">
+            <h5>AI Chatbot</h5>
+            <div class="tech-icons">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="movie.webp" class="img-fluid" alt="Harry Potter Website">
-                            <div class="portfolio-links">
-                                <a href="https://movie-recommendation-self.vercel.app/" title="View website"
-                                    target="_blank"><i class="bx bx-link"></i></a>
-                                <a href="https://github.com/mohini2023/Movie-Recommendation" title="View github"
-                                    target="_blank"><i class="bx bxl-github"></i></a>
-                            </div>
-                            <br>
-                            <div class="portfolio-title">
-                                <h5>Movie-Recommendation </h5>
-                                <i class="fa-brands fa-html5  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-css3-alt  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-bootstrap fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-js  fa-lg" style="color: #0563BB;"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="sherise.webp"  alt="Covid Status App" height="220px" width="100%">
-                            <div class="portfolio-links">
-                                <a href="https://she-rise.vercel.app/" title="View CovidApp"
-                                    target="_blank"><i class="bx bx-link"></i></a>
-                                <a href="https://github.com/mohini2023/She_Rise" title="View github"
-                                    target="_blank"><i class="bx bxl-github"></i></a>
-                            </div>
-                            <br>
-                            <div class="portfolio-title">
-                                <h5>SheRise </h5>
-                                <i class="fa-brands fa-react fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-css3-alt fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-solid fa-leaf  fa-lg" style="color: #0563BB;"></i>
-                            </div>
-                        </div>
-                    </div>
+      <!-- MOVIE RECOMMENDATION -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="assets/img/movie.webp" alt="Movie Recommendation"
+            width="400" height="225" loading="lazy" class="img-fluid">
+          <div class="portfolio-links">
+            <a href="https://movie-recommendation-self.vercel.app/" target="_blank"><i class="bx bx-link"></i></a>
+            <a href="https://github.com/mohini2023/Movie-Recommendation" target="_blank"><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="portfolio-title">
+            <h5>Movie Recommendation</h5>
+            <div class="tech-icons">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-bootstrap"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="quote generator.webp" class="img-fluid" alt="fantastic-beasts-website">
-                            <div class="portfolio-links">
-                                <a href="https://random-quote-nu-gules.vercel.app/"
-                                    title="View Reasearch Journal" target="_blank"><i class="bx bx-link"></i></a>
-                                <a href="https://github.com/mohini2023/RandomQuote" title="View github"
-                                    target="_blank"><i class="bx bxl-github"></i></a>
-                            </div>
-                            <br>
-                            <div class="portfolio-title">
-                                <h5>Random Quote generator </h5>
-                                <i class="fa-brands fa-html5  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-css3-alt  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-bootstrap  fa-lg" style="color: #0563BB;"></i>
-                            </div>
-                        </div>
-                    </div>
+      <!-- SHERISE APP -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="assets/img/sherise.webp" alt="SheRise App"
+            width="400" height="225" loading="lazy" class="img-fluid">
+          <div class="portfolio-links">
+            <a href="https://she-rise.vercel.app/" target="_blank"><i class="bx bx-link"></i></a>
+            <a href="https://github.com/mohini2023/She_Rise" target="_blank"><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="portfolio-title">
+            <h5>SheRise</h5>
+            <div class="tech-icons">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="tik-tak.webp"  alt="React Native chatApp"height="180px" width="100%">
-                            <div class="portfolio-links">
-                                <a href="https://tik-tac-toe-iota.vercel.app/" title="View chatApp"
-                                    target="_blank"><i class="bx bx-link"></i></a>
-                                <a href="https://github.com/mohini2023/TikTac-Toe" title="View github"
-                                    target="_blank"><i class="bx bxl-github"></i></a>
-                            </div>
-                            <br>
-                            <div class="portfolio-title">
-                                <h5>Tik Tak -Toe</h5>
-                                <i class="fa-brands fa-react  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-css3-alt  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-solid fa-mobile  fa-lg" style="color: #0563BB;"></i>
-                            </div>
-                        </div>
-                    </div>
+      <!-- RANDOM QUOTE -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="assets/img/quote generator.webp" alt="Random Quote Generator"
+            width="400" height="225" loading="lazy" class="img-fluid">
+          <div class="portfolio-links">
+            <a href="https://random-quote-nu-gules.vercel.app/" target="_blank"><i class="bx bx-link"></i></a>
+            <a href="https://github.com/mohini2023/RandomQuote" target="_blank"><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="portfolio-title">
+            <h5>Random Quote Generator</h5>
+            <div class="tech-icons">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/hag.webp" class="img-fluid" alt="HaGGele-website">
-                            <div class="portfolio-links">
-                                <a href="https://fictional-project-92s6xrjqj-mohini2023.vercel.app/" title="View HaGGele Website"
-                                    target="_blank"><i class="bx bx-link"></i></a>
-                                <a href="https://github.com/mohini2023/FictionalProject" title="View github" target="_blank"><i
-                                        class="bx bxl-github"></i> </a>
-                            </div>
-                            <br>
-                            <div class="portfolio-title">
-                                <h5>Fictional Website </h5>
+      <!-- TIC TAC TOE -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="assets/img/tik-tak.webp" alt="Tic Tac Toe Game"
+            width="400" height="225" loading="lazy" class="img-fluid">
+          <div class="portfolio-links">
+            <a href="https://tik-tac-toe-iota.vercel.app/" target="_blank"><i class="bx bx-link"></i></a>
+            <a href="https://github.com/mohini2023/TikTac-Toe" target="_blank"><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="portfolio-title">
+            <h5>Tic Tac Toe</h5>
+            <div class="tech-icons">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                                <i class="fa-brands fa-html5  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-css3-alt  fa-lg" style="color: #0563BB;"></i>
-                                <i class="fa-brands fa-bootstrap  fa-lg" style="color: #0563BB;"></i>
-                            </div>
-                        </div>
-                    </div>
+      <!-- FICTIONAL WEBSITE -->
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="assets/img/hag.webp" alt="Fictional Website"
+            width="400" height="225" loading="lazy" class="img-fluid">
+          <div class="portfolio-links">
+            <a href="https://fictional-project-92s6xrjqj-mohini2023.vercel.app/" target="_blank"><i class="bx bx-link"></i></a>
+            <a href="https://github.com/mohini2023/FictionalProject" target="_blank"><i class="bx bxl-github"></i></a>
+          </div>
+          <div class="portfolio-title">
+            <h5>Fictional Website</h5>
+            <div class="tech-icons">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="col-lg-4 col-md-6 portfolio-item filter-seo">
+      <!-- SHERISE SEO -->
+     <div class="col-lg-4 col-md-6 portfolio-item filter-seo">
   <div class="portfolio-wrap">
-    <img src="sherise.webp" class="img-fluid" alt="SheRise SEO Project">
+    <img src="assets/img/sherise.webp"
+         alt="SheRise SEO Project"
+         width="400"
+         height="225"
+         loading="lazy"
+         class="img-fluid">
 
     <div class="portfolio-links">
-      <a href="https://www.sherise.eu/" title="Visit Website" target="_blank">
+      <a href="https://www.sherise.eu/" target="_blank">
         <i class="bx bx-link"></i>
       </a>
     </div>
 
-    <br>
     <div class="portfolio-title">
       <h5>SheRise – SEO Optimization</h5>
 
-      <!-- SEO text hidden by default -->
+      <!-- ONE seo-desc only -->
       <p class="seo-desc">
-        On-page & off-page SEO, meta tags optimization, content improvement,
-        image optimization, page speed & backlinks.
+        Technical SEO, page speed optimization, content & image optimization, backlinks.
       </p>
-
-      <i class="fa-solid fa-magnifying-glass" style="color:#0563BB;"></i>
-      <i class="fa-brands fa-google" style="color:#0563BB;"></i>
     </div>
   </div>
 </div>
 
 
-                
-
-                </div>
-
-            </div>
-        </section>
+    </div>
+  </div>
+</section>
 
 
         <!-- ======= Contact Section ======= -->
