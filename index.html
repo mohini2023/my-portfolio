@@ -694,7 +694,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/emailjs@4/dist/email.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -715,7 +716,7 @@ document.addEventListener("DOMContentLoaded", function () {
     emailjs.sendForm(
       "service_zymdcee",
       "template_pb44ylj",
-      this
+      form
     ).then(
       function () {
         status.innerHTML =
@@ -733,5 +734,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-</body>
+  </body>
 </html>
