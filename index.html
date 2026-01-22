@@ -719,9 +719,17 @@ document.addEventListener("DOMContentLoaded", function () {
       form
     ).then(
       function () {
+        // ✅ Show success message
         status.innerHTML =
           "<span style='color:green;'>✅ Message sent successfully!</span>";
+
+        // ✅ Optional: reset form
         form.reset();
+
+        // ✅ Redirect to Thank You page after 1.5 seconds
+        setTimeout(function () {
+          window.location.href = "Thankyou.html";
+        }, 1500);
       },
       function (error) {
         status.innerHTML =
@@ -735,4 +743,5 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
   </body>
+  
 </html>
