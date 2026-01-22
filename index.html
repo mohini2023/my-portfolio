@@ -695,32 +695,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="assets/js/main.js" defer></script>
 
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+(function () {
+  emailjs.init("o9kLuPnu5KvG8uO30"); // PUBLIC KEY
+})();
 
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-<script>
-  emailjs.init("o9kLuPnu5KvG8uO30");
-
-  document.getElementById("contact-form")
-    .addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      emailjs.sendForm(
-        "service_zymdcee",
-        "template_pb44ylj",
-        this
-      )
-      .then(function() {
-        document.getElementById("status").innerHTML =
-          "<span style='color:green;'>✅ Message sent successfully!</span>";
-        document.getElementById("contact-form").reset();
-      })
-      .catch(function(error) {
-        document.getElementById("status").innerHTML =
-          "<span style='color:red;'>❌ Failed to send message.</span>";
-        console.error("EmailJS Error:", error);
-      });
-    });
+  emailjs.sendForm(
+    "service_zymdcee",
+    "template_pb44ylj",
+    this
+  ).then(
+    () => {
+      document.getElementById("status").innerHTML =
+        "<span style='color:green;'>✅ Message sent successfully!</span>";
+      this.reset();
+    },
+    (error) => {
+      document.getElementById("status").innerHTML =
+        "<span style='color:red;'>❌ Failed to send message.</span>";
+      console.error("EmailJS Error:", error);
+    }
+  );
+});
 </script>
 
 </body>
