@@ -628,6 +628,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                 </div>
+                <div class="row mt-4">
+  <div class="col-md-8 mx-auto">
+    <form id="contact-form" class="contact-form">
+
+      <div class="form-group mb-3">
+        <input type="text" name="name" class="form-control"
+          placeholder="Your Name" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <input type="email" name="email" class="form-control"
+          placeholder="Your Email" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <textarea name="message" rows="5" class="form-control"
+          placeholder="Your Message" required></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">
+          Send Message
+        </button>
+      </div>
+
+      <p id="status" class="text-center mt-3"></p>
+
+    </form>
+  </div>
+</div>
+
 
     </main><!-- End #main -->
     <!-- ======= Footer ======= -->
@@ -662,6 +693,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="assets/vendor/typed.js/typed.min.js" defer></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js" defer></script>
   <script src="assets/js/main.js" defer></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("o9kLuPnu5KvG8uO30");
+})();
+
+document.getElementById("contact-form")
+  .addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_zymdcee",
+      "template_pb44ylj",
+      this
+    ).then(
+      function() {
+        document.getElementById("status").innerHTML =
+          "<span style='color:green;'>✅ Message sent successfully!</span>";
+      },
+      function(error) {
+        document.getElementById("status").innerHTML =
+          "<span style='color:red;'>❌ Failed to send message.</span>";
+        console.error(error);
+      }
+    );
+  });
+</script>
 
 </body>
 </html>
